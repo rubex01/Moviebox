@@ -1,0 +1,7 @@
+<div class="register">
+
+    <div class="register-user">
+        {{ @include(forms/register) }}
+    </div>
+
+</div>

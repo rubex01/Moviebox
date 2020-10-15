@@ -1,0 +1,6 @@
+<form action="/endpoint/login" method="post" class="login-user-form">
+    <input type="hidden" name="email" value="{{ $email }}" />
+    <input class="login-user-form-input" type="password" name="password" placeholder="Password" />
+    {{ @include(csrf) }}
+    <button class="login-user-action button" type="submit">Login</button>
+</form>

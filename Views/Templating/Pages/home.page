@@ -1,0 +1,43 @@
+<div class="home">
+
+    <div class="home-content">
+
+        <div class="home-content-title title">
+            <h1>Who's watching?</h1>
+        </div>
+
+        <div class="home-content-users">
+            {{ @if(count($users) > 0) }}
+                {{ @for($users as $user) }}
+                    <a href="/login/{{ $user[1] }}/{{ $user[2] }}" class="home-content-users-link">
+                        <div class="home-content-users-user">
+                            <div class="home-content-users-user-icon">
+                                <svg width="413" height="457" viewBox="0 0 413 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M413 309.5C413 390.962 320.547 457 206.5 457C92.4532 457 0 390.962 0 309.5C0 228.038 92.4532 236.5 206.5 236.5C320.547 236.5 413 228.038 413 309.5Z" fill="#{{ $user[2] }}"/>
+                                        <path d="M408.5 309.5C408.5 348.401 386.433 384.043 349.902 410.137C313.38 436.224 262.694 452.5 206.5 452.5C150.306 452.5 99.6205 436.224 63.098 410.137C26.5669 384.043 4.5 348.401 4.5 309.5C4.5 290.048 9.98458 276.526 19.4417 266.877C29.0195 257.104 43.1643 250.794 61.432 246.85C91.7002 240.316 131.544 240.576 176.747 240.872C186.432 240.935 196.364 241 206.5 241C216.636 241 226.568 240.935 236.253 240.872C281.456 240.576 321.3 240.316 351.568 246.85C369.836 250.794 383.98 257.104 393.558 266.877C403.015 276.526 408.5 290.048 408.5 309.5Z" stroke="black" stroke-opacity="0.2" stroke-width="30"/>
+                                        <circle cx="206" cy="108" r="108" fill="#{{ $user[2] }}"/>
+                                        <circle cx="206" cy="108" r="103.5" stroke="black" stroke-opacity="0.2" stroke-width="30"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="413" height="457" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="home-content-users-user-name">
+                                <h4>{{ $user[0] }}</h4>
+                            </div>
+                        </div>
+                    </a>
+            <?php }} ?>
+        </div>
+
+        <div class="home-content-new">
+            <a href="/register">Im a new user...</a>
+        </div>
+    </div>
+
+</div>
+

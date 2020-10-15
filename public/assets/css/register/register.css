@@ -1,0 +1,20 @@
+.register {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.register-user-form {
+  display: flex;
+  flex-direction: column;
+}
+.register-user-form-input {
+  background: #000;
+  border-radius: 0.3rem;
+  border: 0;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+/*# sourceMappingURL=register.css.map */

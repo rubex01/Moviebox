@@ -1,0 +1,29 @@
+@import "variables"
+@import "mobile"
+
+.errors
+    position: fixed
+    top: 10px
+    right: 10px
+    @include mobile-only
+        padding: 10px
+        width: 100%
+        box-sizing: border-box
+        top: 0
+        right: 0
+
+
+    &-notification
+        background: $black
+        color: lightgray
+        padding: 1rem 1.3rem
+        border-left: 4px solid #f04343
+        border-radius: .2rem
+        margin-bottom: .5rem
+        box-sizing: border-box
+        @include mobile-only
+            width: 100%
+
+        & p
+            padding: 0
+            margin: 0

@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} /assets([^\s?]*) [NC]
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ public/$1 [QSA]
+
+RewriteCond %{REQUEST_URI} !^/assets
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ public/index.php [QSA]
+

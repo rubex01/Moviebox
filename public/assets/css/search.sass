@@ -1,0 +1,39 @@
+@import "variables"
+@import "mobile"
+
+.search
+
+    &-form
+        margin: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+
+        &--downloading input
+            box-shadow: 1px 1px 10px $black
+
+    &-input
+        width: 60%
+        background: $backgroundLighter
+        border: 0
+        border-radius: 3rem
+        padding: .8rem 3.7rem .8rem .7rem
+        color: white
+        @include mobile-only
+            width: 95%
+
+    &-trigger
+        margin: 0
+        border: 0
+        background: $purple
+        border-radius: 50%
+        height: 3rem
+        width: 3rem
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: -3rem
+
+        & svg
+            height: 1.5rem

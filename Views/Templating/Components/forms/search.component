@@ -1,0 +1,8 @@
+<form class="search-form {{ @if(isset($movie)) }}search-form--downloading{{ @endif }}" action="/search" method="get">
+    <input class="search-input" placeholder="{{ @if(isset($movie)) }}Explore while we download your movie{{ @else }}What movie do you want to watch?{{ @endif }}" name="q" value="{{ @if(isset($query)) }}{{ $query }}{{ @endif }}" />
+    <button class="search-trigger" type="submit">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35.75 35.75L26.1667 26.1667L35.75 35.75ZM29.3611 18.1806C29.3611 19.6488 29.0719 21.1027 28.51 22.4592C27.9482 23.8157 27.1246 25.0482 26.0864 26.0864C25.0482 27.1246 23.8157 27.9482 22.4592 28.51C21.1027 29.0719 19.6488 29.3611 18.1806 29.3611C16.7123 29.3611 15.2584 29.0719 13.9019 28.51C12.5455 27.9482 11.3129 27.1246 10.2747 26.0864C9.2365 25.0482 8.41294 23.8157 7.85107 22.4592C7.28919 21.1027 7 19.6488 7 18.1806C7 15.2153 8.17795 12.3715 10.2747 10.2747C12.3715 8.17795 15.2153 7 18.1806 7C21.1458 7 23.9896 8.17795 26.0864 10.2747C28.1832 12.3715 29.3611 15.2153 29.3611 18.1806Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</form>

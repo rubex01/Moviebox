@@ -1,0 +1,16 @@
+<form action="/endpoint/account" method="post">
+    <input type="text" name="username" value="{{ $user['username'] }}" />
+    <input type="text" name="email" value="{{ $user['email'] }}" />
+    <input type="text" name="color" value="{{ $user['color'] }}" />
+    <input type="password" name="password" placeholder="Your password" />
+    {{ @include(csrf) }}
+    <button type="submit" class="button">Update account information</button>
+</form>
+
+<form action="/endpoint/password" method="post">
+    <input type="password" name="password" placeholder="New password" />
+    <input type="password_confirmation" name="password" placeholder="Confirm password" />
+    <input type="password_old" name="password" placeholder="Your password" />
+    {{ @include(csrf) }}
+    <button type="submit" class="button">Update password</button>
+</form>

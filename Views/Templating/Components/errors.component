@@ -1,0 +1,15 @@
+{{ @if(isset($_SESSION['errors'])) }}
+
+    <div class="errors">
+
+        {{ @for($_SESSION['errors'] as $error) }}
+            <div class="errors-notification">
+                <p>{{ $error['message'] }}</p>
+            </div>
+        {{ @endfor }}
+
+    </div>
+
+    <?php unset($_SESSION['errors']) ?>
+
+{{ @endif }}

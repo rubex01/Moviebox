@@ -1,0 +1,59 @@
+#download-inactive {
+  display: none;
+}
+
+#download-active {
+  display: block;
+}
+
+.download {
+  padding: 1rem 2rem;
+}
+.download-title {
+  width: 100%;
+  color: #fff;
+}
+.download-movies {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.download-movie {
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+.download-movie-empty {
+  height: 8rem;
+}
+.download-movie-empty-downloading {
+  background: rgba(56, 45, 119, 0.6);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.8rem 0;
+  text-align: center;
+  color: #fff;
+}
+.download-movie-info {
+  padding: 5rem 0.5rem 0;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.6669592697) 50%, rgba(255, 255, 255, 0) 100%);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  color: #fff;
+}
+.download-movie-info-title h2 {
+  margin-bottom: 0;
+  text-shadow: 1px 1px 10px black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 230px;
+}
+.download-movie-info-items-table {
+  color: #fff;
+  padding: 1rem 0;
+}
+.download-movie-info-items-table tr td {
+  padding: 0.2rem 0.3rem;
+}
+
+/*# sourceMappingURL=download.css.map */

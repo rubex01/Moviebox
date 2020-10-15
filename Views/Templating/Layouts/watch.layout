@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    {{ @include(head) }}
+    <link rel="stylesheet" href="http://localhost<?php echo BASEPATH; ?>/assets/css/search.css">
+</head>
+
+<body>
+
+    {{ @include(csrf) }}
+
+    {{ @content }}
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<div class="error-container">
+    <div>
+
+        <div class="table-error-title">
+            <h1>{{ $code }}</h1>
+            <h4>{{ $message }}</h4>
+        </div>
+
+        <hr class="error-hr">
+
+        <table>
+
+            <tr>
+                <th>File</th>
+                <th>Line</th>
+                <th>Function</th>
+                <th>Type</th>
+                <th>Arguments</th>
+            </tr>
+
+            {{ @for($trace as $trace) }}
+                <tr class="error-list">
+                    <td>
+                        <span class="error-file">{{ array($trace['file']) }}</span>
+                    </td>
+                    <td>
+                        <span class="error-line">{{ array($trace['line']) }}</span>
+                    </td>
+                    <td>
+                        <span class="error-function">{{ array($trace['function']) }}()</span>
+                    </td>
+                    <td>
+                        <span class="error-type">{{ array($trace['type']) }}</span>
+                    </td>
+                    <td>
+                        <span class="error-args">{{ array($trace['args']) }}</span>
+                    </td>
+                </tr>
+            {{ @endfor }}
+
+        </table>
+    </div>
+</div>

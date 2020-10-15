@@ -1,0 +1,75 @@
+.navbar {
+  width: 100%;
+  background: #000;
+  display: flex;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .navbar-options {
+    margin-top: 1rem;
+  }
+}
+.navbar-options-link {
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  background: #1D1D1D;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border-radius: 3rem;
+  color: #fff;
+}
+.navbar-options-link-download {
+  padding: 0.4rem 1rem 0.4rem 1.4rem;
+}
+.navbar-options-link-download svg {
+  margin-left: 0.1rem;
+}
+.navbar-options-link-logout {
+  margin-left: 0.5rem;
+}
+.navbar-options-link-account {
+  margin-left: 0.5rem;
+}
+.navbar-options-link-icon {
+  height: 2rem;
+  width: 2rem;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-logo-img {
+  width: 4.2rem;
+}
+@media (max-width: 480px) {
+  .navbar-logo-img {
+    width: 2rem;
+  }
+}
+.navbar-logo-title {
+  margin-left: 1rem;
+  color: #fff;
+}
+.navbar-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=navbar.css.map */

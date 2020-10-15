@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #333;
+}
+
+a {
+  color: #0094FF;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+.title {
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.button:disabled {
+  background: #202020;
+  border-color: #202020;
+}
+
+.button {
+  background: #453894;
+  color: #fff;
+  border: 1px solid #342978;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.a-button {
+  background: #453894;
+  color: #fff;
+  border: 1px solid #342978;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font: 400 13.3333px Arial;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+}
+.modal-content {
+  background: #333;
+  padding: 2rem;
+  margin: 1rem;
+  color: #fff;
+  border-radius: 1rem;
+  max-width: 55%;
+}
+@media (max-width: 480px) {
+  .modal-content {
+    max-width: 99%;
+  }
+}
+.modal-content-body {
+  margin: 1.6rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.6rem 0;
+}
+.modal-content-actions {
+  display: flex;
+}
+.modal-content-actions button:first-child {
+  margin-left: auto;
+}
+.modal-content-title h1, .modal-content-title h2, .modal-content-title h3, .modal-content-title h4, .modal-content-title h5, .modal-content-title p, .modal-content-body h1, .modal-content-body h2, .modal-content-body h3, .modal-content-body h4, .modal-content-body h5, .modal-content-body p, .modal-content-actions h1, .modal-content-actions h2, .modal-content-actions h3, .modal-content-actions h4, .modal-content-actions h5, .modal-content-actions p {
+  margin: 0;
+}
+
+#modalHide {
+  display: none;
+}
+
+#modalDisplay {
+  display: flex;
+}
+
+/*# sourceMappingURL=app.css.map */

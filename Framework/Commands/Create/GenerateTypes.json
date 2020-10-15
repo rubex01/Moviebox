@@ -1,0 +1,22 @@
+{
+  "migration": {
+    "path": "Migrations",
+    "extension": ".php"
+  },
+  "controller": {
+    "path": "App/Controllers",
+    "extension": ".php"
+  },
+  "database": {
+    "path": "Databases",
+    "extension": ".php"
+  },
+  "middleware": {
+    "path": "App/Middleware",
+    "extension": ".php"
+  },
+  "layout": {
+    "path": "Views/Templating/Layouts",
+    "extension": ""
+  }
+}

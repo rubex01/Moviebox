@@ -1,0 +1,15 @@
+<html>
+
+<head>
+    {{ @include(head) }}
+</head>
+
+<body>
+
+    {{ @include(errors) }}
+
+    {{ @content }}
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+{
+    "input": {
+        "emailTest": "test@test",
+        "requiredTest": "",
+        "intTest": "randomVal",
+        "confirmTest": "val0",
+        "confirmTest_confirmation": "val1",
+        "booleanTest": "randomVal",
+        "arrayTest": "randomVal",
+        "active_urlTest": "randomVal",
+        "afterTest": "2020-10-16",
+        "dateTest": "randomVal",
+        "differentTest": "randomVal",
+        "ipaddressTest": "randomVal",
+        "jsonTest": "randomVal",
+        "lengthTest": "randomVal",
+        "phoneTest": "randomVal"
+    },
+    "filters": {
+        "emailTest": [
+            "email"
+        ],
+        "requiredTest": [
+            "required"
+        ],
+        "intTest": [
+            "integer"
+        ],
+        "confirmTest": [
+            "confirmation"
+        ],
+        "booleanTest": [
+            "boolean:true"
+        ],
+        "arrayTest": [
+            "array"
+        ],
+        "active_urlTest": [
+            "active_url"
+        ],
+        "afterTest": [
+            "after:2020-11-16"
+        ],
+        "dateTest": [
+            "date"
+        ],
+        "differentTest": [
+            "different:randomVal"
+        ],
+        "ipaddressTest": [
+            "ipaddress"
+        ],
+        "jsonTest": [
+            "json"
+        ],
+        "lengthTest": [
+            "length:2"
+        ],
+        "phoneTest": [
+            "phone"
+        ]
+    },
+    "customMessages": {
+        "emailTest.email": "testMessage",
+        "requiredTest.required": "requiredTestMessage",
+        "intTest.integer": "intTestMessage",
+        "confirmTest.confirmation": "confirmTestMessage",
+        "booleanTest.boolean:true": "booleanTestMessage",
+        "arrayTest.array": "arrayTestMessage",
+        "active_urlTest.active_url": "active_urlTestMessage",
+        "afterTest.after:2020-11-16": "afterTestMessage",
+        "dateTest.date": "dateTestMessage",
+        "differentTest.different:randomVal": "differentTestMessage",
+        "ipaddressTest.ipaddress": "ipaddressTestMessage",
+        "jsonTest.json": "jsonTestMessage",
+        "lengthTest.length:2": "lengthTestMessage",
+        "phoneTest.phone": "phoneTestMessage"
+    }
+}

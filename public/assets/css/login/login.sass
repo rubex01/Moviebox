@@ -1,0 +1,36 @@
+@import "../variables"
+@import "../mixin"
+
+.login
+    display: flex
+    align-items: center
+    height: 100%
+    justify-content: center
+
+    &-user
+
+        &-form
+            display: flex
+
+            &-input
+                background: $black
+                border-radius: .3rem
+                border: 0
+                color: $white
+                padding: 0.5rem 0.8rem
+                margin-right: .5rem
+
+        &-icon
+            border-radius: 1.7rem
+            padding: 2rem 1rem
+            display: flex
+            justify-content: center
+            align-items: center
+            width: auto
+
+            & svg
+                width: 100px
+                height: 110px
+                background: $backgroundDarker
+                padding: 2rem
+                border-radius: 20%

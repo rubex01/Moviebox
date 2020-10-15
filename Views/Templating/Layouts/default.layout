@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    {{ @include(head) }}
+    <link rel="stylesheet" href="http://localhost<?php echo BASEPATH; ?>/assets/css/navbar.css">
+    <link rel="stylesheet" href="http://localhost<?php echo BASEPATH; ?>/assets/css/search.css">
+</head>
+
+<body>
+
+    {{ @include(errors) }}
+
+    {{ @include(navbar) }}
+
+    {{ @content }}
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<title>{{ $titleAppend }} - <?php echo getenv('APP_NAME'); ?></title>
+<link rel="stylesheet" href="/assets/css/app.css">
+<link rel="stylesheet" href="/assets/css/errors.css">
+<script src="/assets/js/app.js"></script>
+
+{{ @if(isset($CSS)) }}
+    {{ @for($CSS as $cssFile) }}
+        <link rel="stylesheet" href="/assets/css/{{ $cssFile }}">
+    {{ @endfor }}
+{{ @endif }}
+
+{{ @if(isset($JS)) }}
+    {{ @for($JS as $jsFile) }}
+        <script src="/assets/js/{{ $jsFile }}"></script>
+    {{ @endfor }}
+{{ @endif }}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="/assets/images/logo.png">

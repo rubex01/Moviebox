@@ -1,0 +1,14 @@
+.index {
+  padding: 1rem 2rem;
+}
+.index-title {
+  width: 100%;
+  color: #fff;
+}
+.index-movies {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+/*# sourceMappingURL=home.css.map */

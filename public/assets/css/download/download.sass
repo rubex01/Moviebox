@@ -1,0 +1,59 @@
+@import "../variables"
+@import "../mixin"
+
+#download-inactive
+    display: none
+
+#download-active
+    display: block
+
+.download
+    padding: 1rem 2rem
+
+    &-title
+        width: 100%
+        color: $white
+
+    &-movies
+        margin: 1rem 0
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr))
+
+    &-movie
+        margin: .5rem
+        border-radius: 1rem
+
+        &-empty
+            height: 8rem
+
+            &-downloading
+                background: rgb(56, 45, 119, .6)
+                border-top-left-radius: 1rem
+                border-top-right-radius: 1rem
+                padding: .8rem 0
+                text-align: center
+                color: $white
+
+        &-info
+            padding: 5rem .5rem 0
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6669592696629214) 50%, rgba(255,255,255,0) 100%)
+            border-bottom-right-radius: 1rem
+            border-bottom-left-radius: 1rem
+            color: $white
+
+            &-title h2
+                margin-bottom: 0
+                text-shadow: 1px 1px 10px black
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                max-width: 230px
+
+            &-items
+
+                &-table
+                    color: $white
+                    padding: 1rem 0
+
+                    & tr td
+                        padding: .2rem .3rem

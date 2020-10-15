@@ -1,0 +1,72 @@
+[
+    {
+        "name": "emailTest",
+        "value": "test@test",
+        "message": "testMessage"
+    },
+    {
+        "name": "requiredTest",
+        "value": "",
+        "message": "requiredTestMessage"
+    },
+    {
+        "name": "intTest",
+        "value": "randomVal",
+        "message": "intTestMessage"
+    },
+    {
+        "name": "confirmTest",
+        "value": "val0",
+        "message": "confirmTestMessage"
+    },
+    {
+        "name": "booleanTest",
+        "value": "randomVal",
+        "message": "booleanTestMessage"
+    },
+    {
+        "name": "arrayTest",
+        "value": "randomVal",
+        "message": "arrayTestMessage"
+    },
+    {
+        "name": "active_urlTest",
+        "value": "randomVal",
+        "message": "active_urlTestMessage"
+    },
+    {
+        "name": "afterTest",
+        "value": "2020-10-16",
+        "message": "afterTestMessage"
+    },
+    {
+        "name": "dateTest",
+        "value": "randomVal",
+        "message": "dateTestMessage"
+    },
+    {
+        "name": "differentTest",
+        "value": "randomVal",
+        "message": "differentTestMessage"
+    },
+    {
+        "name": "ipaddressTest",
+        "value": "randomVal",
+        "message": "ipaddressTestMessage"
+    },
+    {
+        "name": "jsonTest",
+        "value": "randomVal",
+        "message": "jsonTestMessage"
+    },
+    {
+        "name": "lengthTest",
+        "value": "randomVal",
+        "message": "lengthTestMessage"
+    },
+    {
+        "name": "phoneTest",
+        "value": "randomVal",
+        "message": "phoneTestMessage"
+    }
+]

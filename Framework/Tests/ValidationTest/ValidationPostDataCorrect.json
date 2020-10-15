@@ -1,0 +1,63 @@
+{
+    "input": {
+        "emailTest": "test@test.com",
+        "requiredTest": "randomVal",
+        "intTest": 1,
+        "confirmTest": "val0",
+        "confirmTest_confirmation": "val0",
+        "booleanTest": true,
+        "arrayTest": ["test", "test2"],
+        "active_urlTest": "google.com",
+        "afterTest": "2020-10-16",
+        "dateTest": "2020-10-16",
+        "differentTest": "randomVal",
+        "ipaddressTest": "192.168.178.25",
+        "jsonTest": "{\"a\":1,\"b\":\"a sample text\"}",
+        "lengthTest": "randomVal",
+        "phoneTest": "0612345678"
+    },
+    "filters": {
+        "emailTest": [
+            "email"
+        ],
+        "requiredTest": [
+            "required"
+        ],
+        "intTest": [
+            "integer"
+        ],
+        "confirmTest": [
+            "confirmation"
+        ],
+        "booleanTest": [
+            "boolean:true"
+        ],
+        "arrayTest": [
+            "array"
+        ],
+        "active_urlTest": [
+            "active_url"
+        ],
+        "afterTest": [
+            "after:2020-09-16"
+        ],
+        "dateTest": [
+            "date"
+        ],
+        "differentTest": [
+            "different:randomVal1"
+        ],
+        "ipaddressTest": [
+            "ipaddress"
+        ],
+        "jsonTest": [
+            "json"
+        ],
+        "lengthTest": [
+            "length:9"
+        ],
+        "phoneTest": [
+            "phone"
+        ]
+    }
+}

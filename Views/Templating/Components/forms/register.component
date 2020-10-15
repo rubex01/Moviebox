@@ -1,0 +1,8 @@
+<form action="/endpoint/register" method="post" class="register-user-form">
+    <input class="register-user-form-input" type="text" name="username" placeholder="Your username" />
+    <input class="register-user-form-input" type="email" name="email" placeholder="Your email address" />
+    <input class="register-user-form-input" type="password" name="password" placeholder="Password" />
+    <input class="register-user-form-input" type="password" name="password_confirmation" placeholder="Confirm your password">
+    {{ @include(csrf) }}
+    <button type="submit" class="register-user-form-action button">Register</button>
+</form>
